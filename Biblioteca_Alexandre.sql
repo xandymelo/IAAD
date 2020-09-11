@@ -15,7 +15,7 @@ create table LIVRO(
     UNIQUE(Cod_livro)); -- Aplicando a restrição de chave primária (PK)
 create table LIVRO_AUTOR(
 	Cod_livro CHAR(11) NOT NULL,
-	Nome_autor VARCHAR(45)  NOT NULL,
+	Nome_autor CHAR(45)  NOT NULL,
 	PRIMARY KEY (Nome_autor));
 create table EDITORA(
 	Nome CHAR(45) NOT NULL,
