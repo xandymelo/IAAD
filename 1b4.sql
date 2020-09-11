@@ -1,0 +1,1 @@
+SELECT Titulo FROM livro, livro_emprestimo WHERE Data_emprestimo > '2020-08-01' AND  Data_emprestimo < '2020-09-01' AND livro_emprestimo.Cod_livro = livro.Cod_livro
