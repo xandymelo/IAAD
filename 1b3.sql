@@ -1,0 +1,1 @@
+SELECT  Qtd_copia FROM livro_copias WHERE Cod_livro = '11115' AND Cod_unidade = '003'
