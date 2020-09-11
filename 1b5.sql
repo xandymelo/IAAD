@@ -1,0 +1,1 @@
+SELECT Nome, Nome_unidade, Titulo FROM  usuario, livro_emprestimo, unidade_biblioteca,livro WHERE LOCATE('A', nome) = 1 AND usuario.Num_cartao = livro_emprestimo.Nr_cartao AND livro_emprestimo.Cod_unidade = unidade_biblioteca.Cod_unidade AND livro_emprestimo.Cod_livro = livro.Cod_livro
