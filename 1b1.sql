@@ -1,0 +1,1 @@
+SELECT Titulo FROM livro WHERE Nome_editora = 'Pearson'
