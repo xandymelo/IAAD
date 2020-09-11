@@ -10,12 +10,12 @@ use biblioteca_Alexandre;
 create table LIVRO(
 	Cod_livro CHAR(11) NOT NULL,
 	Titulo CHAR (45),
-	Nome_editora VARCHAR (45) NOT NULL,
+	Nome_editora CHAR (45),
 	PRIMARY KEY(Cod_livro),
     UNIQUE(Cod_livro)); -- Aplicando a restrição de chave primária (PK)
 create table LIVRO_AUTOR(
 	Cod_livro CHAR(11) NOT NULL,
-	Nome_autor CHAR(45)  NOT NULL,
+	Nome_autor VARCHAR(45)  NOT NULL,
 	PRIMARY KEY (Nome_autor));
 create table EDITORA(
 	Nome CHAR(45) NOT NULL,
@@ -45,17 +45,18 @@ create table USUARIO(
 	Telefone CHAR(11),
     PRIMARY KEY (Num_cartao));
 -- populando/carregando as tabelas do banco de dados
+insert into EDITORA values
+	('Pearson','Ed1','99999999'),
+    ('Rob','Ed2','88888888'),
+    ('Tab','Ed3','777777777');
 insert into LIVRO values
 	('11111','Homodeus','Pearson'),
-	('11112','Harry Potter','Pearson'),
+	('11112','Harry Potter','Tab'),
     ('11113','História de Robôs','Rob');
  insert into LIVRO_AUTOR values
 	('11111','Autor1' ),
     ('11112','Jk Rowling'),
     ('11113', 'Autor3');		
-insert into EDITORA values
-	('Pearson','Ed1','99999999'),
-    ('Rob','Ed2','88888888');
 insert into LIVRO_COPIAS values
 	('11111','001',10),
 	('11112','001',50),
