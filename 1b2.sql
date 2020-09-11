@@ -1,0 +1,1 @@
+SELECT Titulo, Nome_autor FROM livro, livro_autor WHERE livro.cod_livro = livro_autor.cod_livro 
