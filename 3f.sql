@@ -1,0 +1,3 @@
+UPDATE FUNCIONARIO
+SET Salario = Salario * 0.9
+WHERE Dnr = 4

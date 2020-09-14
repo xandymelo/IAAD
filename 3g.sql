@@ -1,0 +1,2 @@
+DELETE FROM DEPARTAMENTO
+WHERE Dnome = 'Matriz'

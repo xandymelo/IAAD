@@ -1,0 +1,1 @@
+SELECT Pnome, Minicial, Unome FROM FUNCIONARIO WHERE FUNCIONARIO.Cpf_supervisor = '98765432168'

@@ -1,0 +1,1 @@
+SELECT Pnome, Minicial, Unome FROM FUNCIONARIO, TRABALHA_EM WHERE funcionario.Dnr = 4 AND TRABALHA_EM.Horas > 15.0
