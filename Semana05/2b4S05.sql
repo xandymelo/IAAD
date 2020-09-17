@@ -1,0 +1,1 @@
+SELECT nome_programador, linguagem FROM PROGRAMADOR, linguagem_programacao, programador_linguagem WHERE programador_linguagem.id_linguagem = linguagem_programacao.id_linguagem AND programador_linguagem.id_programador = programador.id_programador
