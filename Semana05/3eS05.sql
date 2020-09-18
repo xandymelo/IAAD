@@ -1,0 +1,2 @@
+SELECT F.Pnome FROM FUNCIONARIO F, (SELECT * FROM FUNCIONARIO F WHERE F.Salario = (SELECT min(Salario) FROM FUNCIONARIO) limit 1) a 
+WHERE F.Salario >= a.Salario + 10000
