@@ -1,0 +1,2 @@
+CREATE VIEW FUNCIONARIO_SALARIO_SUPERVISOR AS SELECT Fs.Pnome as 'Nome Funcionario',Fs.Salario as 'Salario Funcionario', Fss.Pnome as 'Nome Supervisor'
+FROM FUNCIONARIO Fs INNER JOIN FUNCIONARIO Fss ON Fs.Cpf_supervisor = Fss.Cpf AND Fs.Dnr = 5
