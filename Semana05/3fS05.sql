@@ -1,0 +1,1 @@
+SELECT Dnome, Pnome, Salario FROM FUNCIONARIO F, DEPARTAMENTO D WHERE D.Cpf_gerente = F.Cpf
