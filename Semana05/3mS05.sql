@@ -1,0 +1,11 @@
+CREATE TRIGGER Diminuir_salario BEFORE INSERT
+ON FUNCIONARIO
+FOR EACH ROW
+	SET NEW.Salario = NEW.Salario * 0.9;
+    
+INSERT INTO FUNCIONARIO VALUES ('Joana','B','Silva','12345673966', '1965-01-09','Rua das flores, 751, São Paulo, SP','M', 10000, '33344555587', 5);
+
+SELECT *
+FROM FUNCIONARIO
+WHERE Pnome = 'Joana'
+
