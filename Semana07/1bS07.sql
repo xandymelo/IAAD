@@ -1,0 +1,3 @@
+SELECT Pnome
+FROM FUNCIONARIO F, DEPENDENTE D
+WHERE F.Cpf = D.Fcpf AND F.sexo = D.sexo
